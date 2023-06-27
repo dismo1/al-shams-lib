@@ -1,0 +1,44 @@
+<html>
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Roboto:wght@100;300;400;500;700;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+      </style>
+    <link rel="stylesheet" href="style.css"/>
+<link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Roboto:wght@100;300;400;500;700;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+<H1>كلفة الطباعة</H1>
+<div id="scale_main">
+  <div id="scale_display">
+        <h2 id="range" class="neutral">ادخل البيانات</h2>
+        <h3 id="bmi" >--.--</h3>
+        <div id="needle">
+        </div>
+        <div id="needle_bottom">
+        </div>
+      </div>
+  
+    <div class="measurement" id="pages">
+        <h4>عدد الصفحات</h4>
+        <span class="unit">صفحة</span>
+        <input class="input" type="text" id="pages_input" name="pages"            required></input>
+
+   </div>
+   <div class="measurement" id="price">
+        <h4>السعر</h4>
+        <span class="unit">دينار</span>
+        <input class="input" type="text" id="price_input" name="price" required value="65"></input>
+
+   </div>
+ 
+      <div class="calcidiv">
+        <button id="calculate" onclick="calculate(document.getElementById('pages_input').value, document.getElementById('price_input').value)">احسب قيمة الطباعة</button>
+  </div>
+  
+ </div>
+ <script src="main.js"></script>
+  </body>
+</html>
